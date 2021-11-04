@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="myInput" placeholder="search for a country" onkeyup="search_function()">
+    
+    <table id="myTable">
+          <tr class="header">
+              <th>COUNTRY</th>
+              <th>CAPITAL</th>
+              <th>CURRENCY</th>
+          </tr>
+          <tr>
+              <td>Afghanistan</td>
+              <td>Kabul</td>
+              <td>Afghani</td>
+          </tr>
+          <tr>
+            <td>Albania</td>
+            <td>Tirane</td>
+            <td>Lek</td>
+        </tr>
+        <tr>
+            <td>Algeria</td>
+            <td>Algiers</td>
+            <td>Algerian Dinar</td>
+        </tr>
+        <tr>
+            <td>Andorra</td>
+            <td>Andorra la Vella</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Angola</td>
+            <td>Luanda</td>
+            <td>Kwanza</td>
+        </tr>
+        <tr>
+            <td>Antigua and Barbuda</td>
+            <td>Saint John's</td>
+            <td>East Caribbean Dollar</td>
+        </tr>
+        <tr>
+            <td>Argentina</td>
+            <td>Buenos Aires</td>
+            <td>Argentine Peso</td>
+        </tr>
+        <tr>
+            <td>Armenia</td>
+            <td>Yerevan</td>
+            <td>Dram</td>
+        </tr>
+        <tr>
+            <td>Australia</td>
+            <td>Canberra</td>
+            <td>Australian Dollar</td>
+        </tr>
+        <tr>
+            <td>Austria</td>
+            <td>Vienna</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Azerbaijan</td>
+            <td>Baku</td>
+            <td>Manat</td>
+        </tr>
+        <tr>
+            <td>The Bahamas</td>
+            <td>Nassau</td>
+            <td>Bahamian Dollar</td>
+        </tr>
+        <tr>
+            <td>Bahrain</td>
+            <td>Manama</td>
+            <td>Bahraini Dinar</td>
+        </tr>
+        <tr>
+            <td>Bangladesh</td>
+            <td>Dhaka</td>
+            <td>Taka</td>
+        </tr>
+        <tr>
+            <td>Barbados</td>
+            <td>Bridgetown</td>
+            <td>Barbadian Dollar</td>
+        </tr>
+        <tr>
+            <td>Belarus</td>
+            <td>Minsk</td>
+            <td>Belarusian Ruble</td>
+        </tr>
+        <tr>
+            <td>Belgium</td>
+            <td>Brussels</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Belize </td>
+            <td>Belmopan</td>
+            <td>Belize Dollar</td>
+        </tr>
+        <tr>
+            <td>Benin</td>
+            <td>Porto-Novo</td>
+            <td>West African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Bhutan</td>
+            <td>Thimphu</td>
+            <td>Ngultrum</td>
+        </tr>
+        <tr>
+            <td>Bolivia </td>
+            <td>La Paz; Sucre</td>
+            <td>Boliviano</td>
+        </tr>
+        <tr>
+            <td>Bosnia and Herzegovina</td>
+            <td>Sarajevo</td>
+            <td>Convertible Mark</td>
+        </tr>
+        <tr>
+            <td>Botswana</td>
+            <td>Gaborone</td>
+            <td>Pula</td>
+        </tr>
+        <tr>
+            <td>Brazil</td>
+            <td>Brasilia </td>
+            <td>Real</td>
+        </tr>
+        <tr>
+            <td>Brunei</td>
+            <td>Bandar Seri Begawan</td>
+            <td>Brunei Dollar</td>
+        </tr>
+        <tr>
+            <td>Bulgaria</td>
+            <td>Sofia</td>
+            <td>Lev</td>
+        </tr>
+        <tr>
+            <td>Burkina Faso</td>
+            <td>Ouagadougou</td>
+            <td>West African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Burundi</td>
+            <td>Bujumbura </td>
+            <td>Burundi Franc</td>
+        </tr>
+        <tr>
+            <td>Cambodia</td>
+            <td>Phnom Penh</td>
+            <td>Riel</td>
+        </tr>
+        <tr>
+            <td>Cameroon</td>
+            <td>Yaounde</td>
+            <td>Central African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Canada</td>
+            <td>Ottawa </td>
+            <td>Canadian Dollar</td>
+        </tr>
+        <tr>
+            <td>Cape Verde</td>
+            <td>Praia</td>
+            <td>Cape Verdean Escudo</td>
+        </tr>
+        <tr>
+            <td>Central African Republic</td>
+            <td>Bangui</td>
+            <td>Central African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Chad</td>
+            <td>N'Djamena</td>
+            <td>Central African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Chile</td>
+            <td>Santiago</td>
+            <td>Chilean Peso</td>
+        </tr>
+        <tr>
+            <td>China</td>
+            <td>Beijing</td>
+            <td>Chinese Yuan</td>
+        </tr>
+        <tr>
+            <td>Colombia</td>
+            <td>Bogota</td>
+            <td>Colombian Peso</td>
+        </tr>
+        <tr>
+            <td>Comoros</td>
+            <td>Moroni</td>
+            <td>Comorian Franc</td>
+        </tr>
+        <tr>
+            <td>Democratic Republic Of the Congo</td>
+            <td>Kinshasa</td>
+            <td>Congolese Franc</td>
+        </tr>
+        <tr>
+            <td>Republic of the Congo </td>
+            <td>Brazzaville</td>
+            <td>Central African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Costa Rica</td>
+            <td>San Jose</td>
+            <td>Colon</td>
+        </tr>
+        <tr>
+            <td>Ivory Coast</td>
+            <td>Yamoussoukro; Abidjan</td>
+            <td>West African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Croatia </td>
+            <td>Zagreb</td>
+            <td>Croatian</td>
+        </tr>
+        <tr>
+            <td>Cuba</td>
+            <td>Havana</td>
+            <td>Cuban Peso </td>
+        </tr>
+        <tr>
+            <td>Cyprus </td>
+            <td>Nicosia</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Czech Republic</td>
+            <td>Prague</td>
+            <td>Czech Koruna</td>
+        </tr>
+        <tr>
+            <td>Denmark </td>
+            <td>Copenhagen</td>
+            <td>Danish Krone</td>
+        </tr>
+        <tr>
+            <td>Djibouti</td>
+            <td>Djibouti</td>
+            <td>Djiboutian Franc</td>
+        </tr>
+        <tr>
+            <td>Dominica</td>
+            <td>Rosesau</td>
+            <td>East Caribbean Dollar</td>
+        </tr>
+        <tr>
+            <td>East Caribbean Dollar</td>
+            <td>Santo Domingo</td>
+            <td>Dominican Peso</td>
+        </tr>
+        <tr>
+            <td>East Timor</td>
+            <td>Dilli</td>
+            <td>United States Dollar</td>
+        </tr>
+        <tr>
+            <td>Ecuador</td>
+            <td>Quito</td>
+            <td>United States Dollar</td>
+        </tr>
+        <tr>
+            <td>Egypt</td>
+            <td>Cairo</td>
+            <td>Egyptian Pound</td>
+        </tr>
+        <tr>
+            <td>El Salvador</td>
+            <td>San Salvador</td>
+            <td>United States Dollar</td>
+        </tr>
+        <tr>
+            <td>Equitorial Guinea</td>
+            <td>Malabo</td>
+            <td>Central African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Eritrea</td>
+            <td>Asmara</td>
+            <td>Nakfa</td>
+        </tr>
+        <tr>
+            <td>Estonia</td>
+            <td>Tallinn</td>
+            <td>Estonian Kroon; Euro</td>
+        </tr>
+        <tr>
+            <td>Ethiopia</td>
+            <td>Addis Ababa</td>
+            <td>Birr</td>
+        </tr>
+        <tr>
+            <td>Fiji </td>
+            <td>Suva</td>
+            <td>Fijian Dollar</td>
+        </tr>
+        <tr>
+            <td>Finland</td>
+            <td>Helsinki</td>
+            <td>Euro </td>
+        </tr>
+        <tr>
+            <td>France</td>
+            <td>Paris</td>
+            <td>Euro; CFP Franc</td>
+        </tr>
+        <tr>
+            <td>Gabon</td>
+            <td>Libreville</td>
+            <td>Libreville</td>
+        </tr>
+        <tr>
+            <td>The Gambia</td>
+            <td>Banjul</td>
+            <td>Banjul</td>
+        </tr>
+        <tr>
+            <td>Georgia</td>
+            <td>Tbilisi</td>
+            <td>Lari</td>
+        </tr>
+        <tr>
+            <td>Germany </td>
+            <td>Berlin</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Ghana</td>
+            <td>Accra</td>
+            <td>Ghanaian Cedi</td>
+        </tr>
+        <tr>
+            <td>Greece</td>
+            <td>Athens </td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Grenada</td>
+            <td>St. George's</td>
+            <td>East Caribbean Dollar</td>
+        </tr>
+        <tr>
+            <td>Guatemala</td>
+            <td>Guatemala City</td>
+            <td>Quetzal</td>
+        </tr>
+        <tr>
+            <td>Guinea</td>
+            <td>Conakry </td>
+            <td>Guinean Franc</td>
+        </tr>
+        <tr>
+            <td>Guinea-Bissau </td>
+            <td>Bissau</td>
+            <td>West African CFA Franc </td>
+        </tr>
+        <tr>
+            <td>Guyana</td>
+            <td>Georgetown</td>
+            <td>Guyanese Dollar</td>
+        </tr>
+        <tr>
+            <td>Haiti</td>
+            <td>Port-au-Prince</td>
+            <td>Gourde</td>
+        </tr>
+        <tr>
+            <td>Honduras</td>
+            <td>Tegucigalpa</td>
+            <td>Lempira</td>
+        </tr>
+        <tr>
+            <td>Hungary</td>
+            <td>Budapest</td>
+            <td>Forint</td>
+        </tr>
+        <tr>
+            <td>Iceland</td>
+            <td>Reykjavik</td>
+            <td>Icelandic Krona</td>
+        </tr>
+        <tr>
+            <td>India</td>
+            <td>New Delhi</td>
+            <td>Indian Rupee</td>
+        </tr>
+        <tr>
+            <td>Indonesia</td>
+            <td>Jakarta</td>
+            <td>Rupiah</td>
+        </tr>
+        <tr>
+            <td>Iran</td>
+            <td>Tehran</td>
+            <td>Rial</td>
+        </tr>
+        <tr>
+            <td>Iraq</td>
+            <td>Baghdad</td>
+            <td>Iraqi Dinar</td>
+        </tr> 
+        <tr>
+            <td>Republic of Ireland</td>
+            <td>Dublin</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Israel</td>
+            <td>Jerusalem</td>
+            <td>Shekel</td>
+        </tr>
+        <tr>
+            <td>Italy</td>
+            <td>Rome</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Jamaica</td>
+            <td>Kingston</td>
+            <td>Jamaican Dollar</td>
+        </tr>
+        <tr>
+            <td>Japan</td>
+            <td>Tokyo</td>
+            <td>Yen</td>
+        </tr>
+        <tr>
+            <td>Jordan</td>
+            <td>Amman</td>
+            <td>Jordanian Dinar</td>
+        </tr>
+        <tr>
+            <td>Kazakhstan</td>
+            <td>Astana</td>
+            <td>Tenge</td>
+        </tr>
+        <tr>
+            <td>Kenya</td>
+            <td>Nairobi</td>
+            <td>Kenyan Shilling</td>
+        </tr>
+        <tr>
+            <td>Kiribati</td>
+            <td>Tarawa Atoll</td>
+            <td>Kiribati Dollar</td>
+        </tr>
+        <tr>
+            <td>North Korea</td>
+            <td>Pyongyang</td>
+            <td>North Korean Won</td>
+        </tr>
+        <tr>
+            <td>South Korea</td>
+            <td>Seoul</td>
+            <td>South Korean Won</td>
+        </tr>
+        <tr>
+            <td>Kosovo</td>
+            <td>Pristina</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Kuwait</td>
+            <td>Kuwait City</td>
+            <td>Kuwaiti Dollar</td>
+        </tr>
+        <tr>
+            <td>Kyrgyzstan</td>
+            <td>Bishkek</td>
+            <td>Som</td>
+        </tr>
+        <tr>
+            <td>Laos</td>  
+            <td>Vientiane</td>
+            <td>Kip</td>
+        </tr>
+        <tr>
+            <td>Latvia </td>
+            <td>Riga</td>
+            <td>Lats</td>
+        </tr>
+        <tr>
+            <td>Lebanon</td>
+            <td>Beirut</td>
+            <td>Lebanese Pound</td>
+        </tr>
+        <tr>
+            <td>Lesotho</td>
+            <td>Maseru</td>
+            <td>Loti</td>
+        </tr>
+        <tr>
+            <td>Liberia</td>
+            <td>Monrovia</td>
+            <td>Liberian Dollar</td>
+        </tr>
+        <tr>
+            <td>Libya</td>
+            <td>Tripoli</td>
+            <td>Libyan Dinar</td>
+        </tr>
+        <tr>
+            <td>Liechtenstein </td>
+            <td> Vaduz</td>
+            <td>Swiss Franc</td>
+        </tr>
+        <tr>
+            <td>Lithuania</td>
+            <td>Vilnius</td>
+            <td>Lithuanian Litas</td>
+        </tr>
+        <tr>
+            <td>Luxembourg </td>
+            <td>Luxembourg</td>
+            <td> Euro</td>
+        </tr>
+        <tr>
+            <td>Macedonia</td>
+            <td>Skopje</td>
+            <td>Macedonian Denar</td>
+        </tr>
+        <tr>
+            <td>Madagascar</td>
+            <td>Antananarivo</td>
+            <td>Malagasy Ariary</td>
+        </tr>
+        <tr>
+            <td>Malawi</td>
+            <td>Lilongwe</td>
+            <td>Malawi Kwacha</td>
+        </tr>
+        <tr>
+            <td>Malaysia</td>
+            <td>Kuala Lumpur</td>
+            <td>Ringgit</td>
+        </tr>
+        <tr>
+            <td>Maldives</td>
+            <td>Male</td>
+            <td>Maldivian Rufiyaa</td>
+        </tr>
+        <tr>
+            <td>Mali </td>
+            <td>Bamako</td>
+            <td> West African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Malta</td>
+            <td>Valletta</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Marshall Islands</td>
+            <td>Majuro</td>
+            <td>  United States Dollar</td>
+        </tr>
+        <tr>
+            <td>Mauritania</td>
+            <td>Nouakchott</td>
+            <td>Ouguiya</td>
+        </tr>
+        <tr>
+            <td>Mauritius</td>
+            <td>Port Louis</td>
+            <td>Mauritian Rupee</td>
+        </tr>
+        <tr>
+            <td>Mexico</td>
+            <td>Mexico City</td>
+            <td>Mexican Peso </td>
+        </tr>
+        <tr>
+            <td>Federal States of Micronesia</td>
+            <td>Palikir</td>
+            <td>United States Dollar</td>
+        </tr>
+        <tr>
+            <td>Moldova</td>
+            <td>Chisinau</td>
+            <td>Moldovan Leu</td>
+        </tr>
+        <tr>
+            <td>Monaco</td>
+            <td>Monaco </td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Mongolia</td>
+            <td>Ulaanbaatar</td>
+            <td>Togrog</td>
+        </tr>
+        <tr>
+            <td>Montenegro </td>
+            <td>Podgorica</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Morocco</td>
+            <td>Rabat</td>
+            <td>Moroccan Dirham</td>
+        </tr>
+        <tr>
+            <td>Mozambique</td>
+            <td>Maputo</td>
+            <td>Mozambican Metical</td>
+        </tr>
+        <tr>
+            <td>Myanmar (Burma) </td>
+            <td>Nypyidaw </td>
+            <td>Kyat</td>
+        </tr>
+        <tr>
+            <td>Namibia</td>
+            <td>Windhoek</td>
+            <td>Namibian Dollar</td>
+        </tr>
+        <tr>
+            <td>Nauru</td>
+            <td>Yaren</td>
+            <td>Australian Dollar</td>
+        </tr>
+        <tr>
+            <td>Nepal</td>
+            <td>Kathmandu</td>
+            <td>Nepalese Rupee</td>
+        </tr>
+        <tr>
+            <td>Netherlands</td>
+            <td>Amsterdam</td>
+            <td>Amsterdam</td>
+        </tr>
+        <tr>
+            <td>New Zealand</td>
+            <td>Wellington</td>
+            <td>New Zealand Dollar</td>
+        </tr>
+        <tr>
+            <td>Nicaragua</td>
+            <td>Managua</td>
+            <td>Cordoba</td>
+        </tr>
+        <tr>
+            <td>Niger</td>
+            <td>Niamey</td>
+            <td>West African CFA Franc </td>
+        </tr>
+        <tr>
+            <td>Nigeria</td>
+            <td>Abuja </td>
+            <td>Naira</td>
+        </tr>
+        <tr>
+            <td>Norway</td>
+            <td>Oslo</td>
+            <td>Norwegian Krone</td>
+        </tr>
+        <tr>
+            <td>Oman</td>
+            <td>Muscat</td>
+            <td>Omani Rial </td>
+        </tr>
+        <tr>
+            <td>Pakistan</td>
+            <td>Islamabad</td>
+            <td>Pakistani Rupee </td>
+        </tr>
+        <tr>
+            <td>Palau </td>
+            <td>Melekeok </td>
+            <td>United States Dollar</td>
+        </tr>
+        <tr>
+            <td>Panama </td>
+            <td>Panama City</td>
+            <td>Balboa</td>
+        </tr>
+        <tr>
+            <td>Papa New Guinea</td>
+            <td>Port Moresby</td>
+            <td>Papa New Guinean Kina</td>
+        </tr>
+        <tr>
+            <td>Paraguay</td>
+            <td>Asuncion</td>
+            <td>Guarani</td>
+        </tr>
+        <tr>
+            <td>Peru</td>
+            <td>Lima</td>
+            <td>Nuevo Sol</td>
+        </tr>
+        <tr>
+            <td>Phillipines</td>
+            <td>Manila</td>
+            <td>Phillipine Peso</td>
+        </tr>
+        <tr>
+            <td>Poland</td>
+            <td>Warsaw</td>
+            <td>Złoty</td>
+        </tr>
+        <tr>
+            <td>Portugal</td>
+            <td>Lisbon</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Qatar</td>
+            <td>Doha</td>
+            <td>Qatari Riyal</td>
+        </tr>
+        <tr>
+            <td>Romania</td>
+            <td>Bucharest</td>
+            <td>Romanian Rupee</td>
+        </tr>
+        <tr>
+            <td>Russia</td>
+            <td>Moscow</td>
+            <td>Ruble</td>
+        </tr>
+        <tr>
+            <td>Rwanda</td>
+            <td>Kigali</td>
+            <td>Rwandan Franc</td>
+        </tr>
+        <tr>
+            <td>Saint Kitts and Nevis</td>
+            <td>Basseterre </td>
+            <td>East Caribbean Dollar</td>
+        </tr>
+        <tr>
+            <td>Saint Lucia</td>
+            <td>Castries</td>
+            <td>East Caribbean Dollar</td>
+        </tr>
+        <tr>
+            <td>Saint Vincent and The Grenadines</td>
+            <td>Kingstown</td>
+            <td>East Caribbean Dollar</td>
+        </tr>
+        <tr>
+            <td>Samoa</td>
+            <td>Apia</td>
+            <td>Tala</td>
+        </tr>
+        <tr>
+            <td>San Marino</td>
+            <td>San Marino</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Sao Tome and Principe</td>
+            <td>Sao Tome</td>
+            <td>Dobra</td>
+        </tr>
+        <tr>
+            <td>Saudi Arabia </td>
+            <td>Riyadh</td>
+            <td>Saudi Riyal</td>
+        </tr>
+        <tr>
+            <td>Senegal</td>
+            <td>Dakar</td>
+            <td>West African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Serbia</td>
+            <td>Belgrade</td>
+            <td>Serbian Dinar</td>
+        </tr>
+        <tr>
+            <td>Seychelles</td>
+            <td>Victoria</td>
+            <td>Seychoellois Rupee</td>
+        </tr>
+        <tr>
+            <td>Sierra Leone</td>
+            <td>Freetown</td>
+            <td>Leone</td>
+        </tr>
+        <tr>
+            <td>Singapore </td>
+            <td>Singapore </td>
+            <td>Singapore Dollar</td>
+        </tr>
+        <tr>
+            <td>Slovakia</td>
+            <td> Bratislava</td>
+            <td> Euro</td>
+        </tr>
+        <tr>
+            <td>Slovenia</td>
+            <td> Ljubljana</td>
+            <td> Euro</td>
+        </tr>
+        <tr>
+            <td>Solomon Islands </td>
+            <td>Honiara</td>
+            <td> Solomon Islands Dollar</td>
+        </tr>
+        <tr>
+            <td>Somalia</td>
+            <td>Mogadishu</td>
+            <td> Somali Shilling</td>
+        </tr>
+        <tr>
+            <td>South Africa /td>
+            <td>Bloemfontein</td>
+            <td>Rand<</td>
+        </tr>
+        <tr>
+            <td>Spain</td>
+            <td> Madrid</td>
+            <td> Euro</td>
+        </tr>
+        <tr>
+            <td>Sri Lanka</td>
+            <td>Colombo</td>
+            <td> Sri Lankan Rupee</td>
+        </tr>
+        <tr>
+            <td>Sudan</td>
+            <td>Khartoum</td>
+            <td>Sudanese Pound</td>
+        </tr>
+        <tr>
+            <td>Suriname</td>
+            <td>Paramaribo</td>
+            <td>Surinamese Dollar</td>
+        </tr>
+        <tr>
+            <td>Swaziland</td>
+            <td>Mbabane</td>
+            <td>Lilangeni</td>
+        </tr>
+        <tr>
+            <td>Sweden</td>
+            <td>Stockholm</td>
+            <td>Swedish Krona</td>
+        </tr>
+        <tr>
+            <td>Switzerland</td>
+            <td>Berne</td>
+            <td>Swiss Franc</td>
+        </tr>
+        <tr>
+            <td>Syria</td>
+            <td>Damascus</td>
+            <td>Syrian Pound </td>
+        </tr>
+        <tr>
+            <td>Taiwan</td>
+            <td>Taipei</td>
+            <td>New Taiwan Dollar</td>
+        </tr>
+        <tr>
+            <td>Tajikistan</td>
+            <td>Dushanbe</td>
+            <td>Somoni</td>
+        </tr>
+        <tr>
+            <td>Tanzania</td>
+            <td>Tanzania</td>
+            <td>Tanzanian Schilling</td>
+        </tr>
+        <tr>
+            <td>Thailand</td>
+            <td>Bangkok</td>
+            <td>Thai Baht</td>
+        </tr>
+        <tr>
+            <td>Togo</td>
+            <td>Lome</td>
+            <td>West African CFA Franc</td>
+        </tr>
+        <tr>
+            <td>Tonga</td>
+            <td>Nuku'alofa</td>
+            <td>Pa'anga</td>
+        </tr>
+        <tr>
+            <td>Trinidad and Tobago</td>
+            <td>Port-of-Spain</td>
+            <td>Trinidad and Tobago Dollar</td>
+        </tr>
+        <tr>
+            <td>Tunisia</td>
+            <td>Tunis</td>
+            <td>Tunisian Dinar</td>
+        </tr>
+        <tr>
+            <td>Turkey</td>
+            <td>Ankara</td>
+            <td>Turkish Lira</td>
+        </tr>
+        <tr>
+            <td>Turkmenistan</td>
+            <td>Ashgabat</td>
+            <td>Turkmen New Manat</td>
+        </tr>
+        <tr>
+            <td>Turkmen New Manat</td>
+            <td>Vaiaku</td>
+            <td>Tuvaluan Dollar</td>
+        </tr>
+        <tr>
+            <td>Tuvalu</td>
+            <td>Vaiaku</td>
+            <td>Tuvaluan Dollar</td>
+        </tr>
+        <tr>
+            <td>Uganda</td>
+            <td>Kampala</td>
+            <td>Ugandan Shilling</td>
+        </tr>
+        <tr>
+            <td>Ukraine</td>
+            <td>Kiev</td>
+            <td>Hryvnia</td>
+        </tr>
+        <tr>
+            <td>United Arab Emirates</td>
+            <td>Abu Dhabi</td>
+            <td>Dirham</td>
+        </tr>
+        <tr>
+            <td>United Kingdom</td>
+            <td>London</td>
+            <td>Pound Sterling</td>
+        </tr>
+        <tr>
+            <td>United States of America</td>
+            <td>Washington D.C. </td>
+            <td>United States Dollar</td>
+        </tr>
+        <tr>
+            <td>Uruguay</td>
+            <td>Montevideo</td>
+            <td>Uruguayan Peso</td>
+        </tr>
+        <tr>
+            <td>Uzbekistan</td>
+            <td>Tashkent</td>
+            <td>Uzbekistan Som</td>
+        </tr>
+        <tr>
+            <td>Vanuatu</td>
+            <td>Port-Vila</td>
+            <td>Vanuatu Vatu</td>
+        </tr>
+        <tr>
+            <td>Vatican City</td>
+            <td>Vatican City</td>
+            <td>Euro</td>
+        </tr>
+        <tr>
+            <td>Venezuela</td>
+            <td>Caracas</td>
+            <td>Bolivar Fuerte</td>
+        </tr>
+        <tr>
+            <td>Vietnam</td>
+            <td>Hanoi</td>
+            <td>Dong</td>
+        </tr>
+        <tr>
+            <td>Yemen</td>
+            <td>Sanaa</td>
+            <td>Sanaa</td>
+        </tr>
+        <tr>
+            <td>Zambia</td>
+            <td>Lusaka</td>
+            <td>Zambian Kwacha</td>
+        </tr>
+        <tr>
+            <td>Zimbabwe</td>
+            <td>Harare</td>
+            <td>United States Dollar</td>
+        </tr>
+    </table>
+</body>
+
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family:Balsamiq Sans; 
+    }
+
+    body{
+        background-color: white;
+    }
+
+    #myTable{
+        height: auto; 
+        width:90%;
+        margin: 3% 5%;
+        border-spacing: 0;
+        font-size: 22px;
+    }
+
+    #myTable tr{
+        height: 50px;
+        background-color: rgba(255, 255, 255,0.7);
+    }
+
+
+    #myTable tr td{
+        text-align: center;
+    }
+
+    #myTable tr:hover{
+        outline: 1px solid black;
+        outline-style: dashed;
+    }
+
+
+    #myTable tr th{
+        width: calc(100% / 3);
+        color: white;
+    }
+
+    #myTable tr:hover{
+        background-color:rgb(229, 229, 250);
+        cursor: pointer;
+    }
+    #myTable tr:nth-child(1){
+        background-color:rgb(101, 101, 247);
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+
+
+    #myInput{
+        height: 40px;
+        width: 40%;
+        margin: 2% 30%;
+        text-align: center;
+    }
+
+    #myInput::placeholder{
+         text-align: center;
+         font-size: 15px;
+    }
+
+</style>
+
+<script>
+       
+       const search_function=()=>{
+
+           let filter=document.getElementById("myInput").value.toUpperCase();  // value inside the search bar
+           let myTable=document.getElementById("myTable");                    //reference to the table
+           let tr=myTable.getElementsByTagName("tr");                         //reference to all rows inside the table
+           
+           for(let i=0;i<tr.length;i++){
+               let td=tr[i].getElementsByTagName("td")[0]; 
+
+               if(td){
+                   let textvalue=td.textContent||td.innerHTML;
+
+                   if(textvalue.toLocaleUpperCase().indexOf(filter) > -1){
+                       tr[i].style.display="";
+                   }
+                   else{
+                       tr[i].style.display="none";
+                   }
+               }
+           }
+       }
+
+       
+</script>
+</html>
